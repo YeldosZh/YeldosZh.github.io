@@ -1,8 +1,3 @@
-<?php
-session_start();
-// var_dump($_GET);
-?>
-
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
@@ -435,10 +430,10 @@ session_start();
                                     <a href="onas.php"><i class="si si-badge"></i><span class="sidebar-mini-hide">О нас</span></a>
                                 </li>
                                 <li>
-                                    <a href="map.php"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Аптеки</span></a>
+                                    <a class="active" href="map.php"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Аптеки</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
+                                    <a href="contacts.php"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
                                 <li>
@@ -777,64 +772,11 @@ session_start();
 
             <!-- Main Container -->
             <main id="main-container">
-                <?php
-                var_dump($_GET);
-                ?>
-                <section class="content content-boxed">
-                    <!-- Section Content -->
-                    <div class="push-50-t push-50">
-                        <div class="row">
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                           
-                        </div>
-                        
-                </section>
+                <!-- Google Map Container is initialized in js/pages/base_comp_maps_full.js, for more examples you can check out https://hpneo.github.io/gmaps/ -->
+                <div id="js-map-full"></div>
             </main>
             <!-- END Main Container -->
+            
 
             <!-- Footer -->
             <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
@@ -902,17 +844,24 @@ session_start();
         <script src="assets/js/core/js.cookie.min.js"></script>
         <script src="assets/js/app.js"></script>
 
-        <!-- Page Plugins -->
-        <script src="assets/js/plugins/slick/slick.min.js"></script>
-        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
+        <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        <!-- Page JS Plugins -->
+        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
+        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
+        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+        <script src="assets/js/plugins/gmapsjs/gmaps.min.js"></script>
 
         <!-- Page JS Code -->
-        <script src="assets/js/pages/base_pages_dashboard.js"></script>
-        <script>
-            jQuery(function () {
-                // Init page helpers (Slick Slider plugin)
-                App.initHelpers('slick');
-            });
-        </script>
+        <script src="assets/js/pages/base_comp_maps_full.js"></script>
     </body>
 </html>

@@ -1,8 +1,3 @@
-<?php
-session_start();
-// var_dump($_GET);
-?>
-
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
@@ -432,13 +427,13 @@ session_start();
                         <div class="side-content side-content-full">
                             <ul class="nav-main">
                                 <li>
-                                    <a href="onas.php"><i class="si si-badge"></i><span class="sidebar-mini-hide">О нас</span></a>
+                                    <a class="active" href="onas.php"><i class="si si-badge"></i><span class="sidebar-mini-hide">О нас</span></a>
                                 </li>
                                 <li>
                                     <a href="map.php"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Аптеки</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
+                                    <a href="contacts.php"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
                                 <li>
@@ -776,63 +771,37 @@ session_start();
             <!-- END Header -->
 
             <!-- Main Container -->
-            <main id="main-container">
-                <?php
-                var_dump($_GET);
-                ?>
-                <section class="content content-boxed">
-                    <!-- Section Content -->
-                    <div class="push-50-t push-50">
-                        <div class="row">
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                           
+            <main id="main-container" style="min-height: 597px;">
+                
+                <!-- Page Header -->
+                <div class="content bg-gray-lighter">
+                    <h2 class="page-heading push">
+                    Фармацевтическая компания «Aika pharma» <small>    Интернет-аптека</small>
+                    </h2>
+                </div>
+                <!-- END Page Header -->
+
+                <!-- Page Content -->
+                <div class="content content-boxed">
+                    <!-- Demo Content -->
+                    <div class="block block-rounded">
+                        <div class="block-header">
+                            
+                            <h3 class="block-title">Demo Content</h3>
                         </div>
-                        
-                </section>
+                        <div class="block-content block-content-full block-content-narrow">
+                            <div class="push-30 push-30-t">
+                                <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
+                                <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
+                                <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
+                                <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
+                                <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Demo Content -->
+                </div>
+                <!-- END Page Content -->
             </main>
             <!-- END Main Container -->
 

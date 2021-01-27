@@ -10,8 +10,8 @@ var BaseCompMapsFull = function() {
     // Init Full Map
     var initMapFull = function(){
         var $mainCon    = jQuery('#main-container');
-        var $mlat       = 37.7577;
-        var $mlong      = -122.4376;
+        var $mlat       = 43.25218392280385;
+        var $mlong      = 76.91342307139499;
         var $rTimeout;
 
         // Set #main-container position to be relative
@@ -31,7 +31,7 @@ var BaseCompMapsFull = function() {
             div: '#js-map-full',
             lat: $mlat,
             lng: $mlong,
-            zoom: 11
+            zoom: 15
         });
 
         // Set map type
