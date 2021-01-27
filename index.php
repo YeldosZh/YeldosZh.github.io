@@ -1,10 +1,15 @@
+<?php
+session_start();
+// var_dump($_GET);
+?>
+
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
 
-        <title>OneUI - Admin Dashboard Template &amp; UI Framework</title>
+        <title>Интернет-аптека &amp; Купить лекарства </title>
 
         <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -410,47 +415,16 @@
                                 <i class="fa fa-times"></i>
                             </button>
                             <!-- Themes functionality initialized in App() -> uiHandleTheme() -->
-                            <div class="btn-group pull-right">
-                                <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
+                            <div class="btn-group pull-left">
+                                <!-- <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
                                     <i class="si si-drop"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
-                                    <li>
-                                        <a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="h5 text-white" href="index.html">
+                                </button> -->
+                                <a class="h5 text-white" href="index.html">
                                 <img width="150" height="40" src="assets/img/avatars/1.png" alt="">
                                 <br>
                             </a>
+                            </div>
+                            
                         </div>
                         <!-- END Side Header -->
 
@@ -468,24 +442,267 @@
                                 </li>
                                 <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
                                 <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit fa-2x"></i><span class="sidebar-mini-hide">лекарство #1</span></a>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Лекарства</span></a>
+                                    <ul>       
+                                        <li>
+                                            <a href="index.php?queue=Аналгетики">Анальгетики</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Антибиотики">Антибиотики</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Антисептики">Антисептики</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Гинекологические препараты">Гинекологические препараты</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Гормональные препараты">Гормональные препараты</a>
+                                        </li>   
+                                        <li>
+                                            <a href="index.php?queue=Для повышения иммунитета">Для повышения иммунитета</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Гормональные препараты">Гормональные препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Жаропонижающие">Жаропонижающие</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Женские препараты">Женские препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Инъекционные растворы">Инъекционные растворы</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Кожные заболевания">Кожные заболевания</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение алкоголизма, наркомании, табакокурения">Лечение алкоголизма, наркомании, табакокурения</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение артериального давления">Лечение артериального давления</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение геморроя">Лечение геморроя</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение глаз">Лечение глаз</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение головного кровооброщения">Лечение головного кровооброщения</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение десен">Лечение десен</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение жкт">Лечение жкт</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение заболеваний мочеполовой системы">Лечение заболеваний мочеполовой системы</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение заболеваний опорно-двигательного аппарата">Лечение заболеваний опорно-двигательного аппарата</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение лор заболеваний">Лечение лор заболеваний</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение неврологических нарушений">Лечение неврологических нарушений</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение печени">Лечение печени</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение почек">Лечение почек</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение ран и ожогов">Лечение ран и ожогов</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение сахарного диабета">Лечение сахарного диабета</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Лечение сердечно-сосудистых заболеваний">Лечение сердечно-сосудистых заболеваний</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Мужские препараты">Мужские препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Онкологические препараты">Онкологические препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=От паразитов">От паразитов</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Препараты урологии и гинекологии">Препараты урологии и гинекологии</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Пробиотики и пребиотики">Пробиотики и пребиотики</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Противоастматические препараты">Противоастматические препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Противовирусные препараты">Противовирусные препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Противовоспалительные средства">Противовоспалительные средства</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Противогрибковые средства">Противогрибковые средства</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Противокашлевые препараты">Противокашлевые препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Рецептурные препараты">Рецептурные препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Слабительные препараты">Слабительные препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Спазмолитические препараты">Спазмолитические препараты</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=Средства от аллергии">Средства от аллергии</a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Витамины и БАДы</span></a>
+                                    <ul>       
+                                        <li>
+                                            <a href="index.php?queue=БАДы">БАДы</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Витамины и минералы">Витамины и минералы</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Спорт и фитнес">Спорт и фитнес</a>
+                                        </li> 
+                                        <li>
+                                            <a href="index.php?queue=АнтисепТравы и фиточаитики">Травы и фиточаи</a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Изделия мед. назначения</span></a>
+                                    <ul>       
+                                        <li>
+                                            <a href="index.php?queue=Медицинские расходные материалы">Медицинские расходные материалы</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Диагностические тесты">Диагностические тесты</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Лечебный трикотаж">Лечебный трикотаж</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Медицинские изделия">Медицинские изделия</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Медицинские инструменты">Медицинские инструменты</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Медицинские приборы">Медицинские приборы</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Ортопедические изделия">Ортопедические изделия</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Перевязочные материалы">Перевязочные материалы</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Средства ухода за больными">Средства ухода за больными</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Технические средства реабилитации">Технические средства реабилитации</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Мать и дитя</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?queue=Детская мебель">Детская мебель</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Детское питание и кормление">Детское питание и кормление</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Одежда">Одежда</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Питание">Питание</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Товары для детей">Товары для детей</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Товары для мам">Товары для мам</a>
+                                        </li>
+                                    </ul>
                                     
                                 </li>
                                 <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit fa-2x"></i><span class="sidebar-mini-hide">лекарство #2</span></a>
-                                  
-                                </li>
-                                <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit fa-2x"></i><span class="sidebar-mini-hide">лекарство #3</span></a>
-                                    
-                                </li>
-                                <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit fa-2x"></i><span class="sidebar-mini-hide">лекарство #4</span></a>
-                                    
-                                </li>
-                                <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit fa-2x"></i><span class="sidebar-mini-hide">лекарство #5</span></a>
-                                    
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Красота и гигиена</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?queue=Бытовая химия">Бытовая химия</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Гигиена">Гигиена</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Дезодоранты">Дезодоранты</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Дермокосметика">Дермокосметика</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Для ванны и душа">Для ванны и душа</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Женская гигиена">Женская гигиена</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Загар и защита от солнца">Загар и защита от солнца</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Защита от насекомых">Защита от насекомых</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Мужская линия">Мужская линия</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Оптика">Оптика</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Подарочные наборы">Подарочные наборы</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Уход за волосами">Уход за волосами</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Уход за лицом">Уход за лицом</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Уход за ногами">Уход за ногами</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Уход за полостью рта">Уход за полостью рта</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Уход за руками">Уход за руками</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Уход за телом">Уход за телом</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?queue=Эфирные и косметические масла">Эфирные и косметические масла</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -503,7 +720,7 @@
                 <ul class="nav-header pull-right">
                     <i class="glyphicon glyphicon-earphone"></i><big> +7 700 557 00 57</big>
                         <a class="text-success" href="javascript:void(0)">
-                             <i class="fa fa-2x fa-fw fa-youtube"></i>
+                             <i class="fa fa-2x fa-fw fa-whatsapp"></i>
                         </a>
                     
                         <a class="text-primary" href="javascript:void(0)">
@@ -546,9 +763,9 @@
                         </button>
                     </li>
                     <li class="js-header-search header-search">
-                        <form class="form-horizontal" action="base_pages_search.html" method="post">
+                        <form class="form-horizontal" action="index.php" method="GET">
                             <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b">
-                                <input class="form-control" type="text" id="base-material-text" name="base-material-text" placeholder="Введите название лекарства">
+                                <input class="form-control" type="text" id="base-material-text" name="search-text" placeholder="Введите название лекарства">
                                 <span class="input-group-addon"><i class="si si-magnifier"></i></span>
                             </div>
                         </form>
@@ -560,7 +777,62 @@
 
             <!-- Main Container -->
             <main id="main-container">
-                
+                <?php
+                var_dump($_GET);
+                ?>
+                <section class="content content-boxed">
+                    <!-- Section Content -->
+                    <div class="push-50-t push-50">
+                        <div class="row">
+                            <!-- Story -->
+                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
+                                <a class="block block-link-hover2" href="#">
+                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
+                                    <div class="block-content">
+                                        <div class="font-s12 push">
+                                            <em class="pull-right">2 240 ₸</em>
+                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
+                                        </div>
+                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Story -->
+                            <!-- Story -->
+                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
+                                <a class="block block-link-hover2" href="#">
+                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
+                                    <div class="block-content">
+                                        <div class="font-s12 push">
+                                            <em class="pull-right">2 240 ₸</em>
+                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
+                                        </div>
+                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Story -->
+                            <!-- Story -->
+                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
+                                <a class="block block-link-hover2" href="#">
+                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
+                                    <div class="block-content">
+                                        <div class="font-s12 push">
+                                            <em class="pull-right">2 240 ₸</em>
+                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
+                                        </div>
+                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Story -->
+                           
+                        </div>
+                        
+                </section>
             </main>
             <!-- END Main Container -->
 
