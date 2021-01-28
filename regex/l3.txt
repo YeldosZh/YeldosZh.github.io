@@ -1,0 +1,22 @@
+<ul class="subcategories">
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/meditsinskiye-raskhodnyye-materialy?segment=available"> Медицинские расходные материалы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/diagnosticeskie-testy?segment=available">Диагностические тесты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecebnyj-trikotaz?segment=available">Лечебный трикотаж</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/medicinskie-izdelia?segment=available">Медицинские изделия</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/medicinskie-instrumenty?segment=available">Медицинские инструменты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/meditsinskiye-pribory?segment=available">Медицинские приборы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/ortopediceskie-izdelia?segment=available">Ортопедические изделия</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/perevazocnye-materialy?segment=available">Перевязочные материалы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/sredstva-ukhoda-za-bolnymi?segment=available">Средства ухода за больными</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/tekhnicheskiye-sredstva-reabilitatsii?segment=available">Технические средства реабилитации</a>                                </li>
+                                                    </ul>

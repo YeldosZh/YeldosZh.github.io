@@ -1,0 +1,16 @@
+<ul class="subcategories">
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/bytovaya-tekhnika?segment=available">Бытовая техника</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/detskaa-mebel?segment=available">Детская мебель</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/detskoye-pitaniye-i-kormleniye?segment=available">Детское питание и кормление</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/odezda?segment=available">Одежда</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/pitanie?segment=available">Питание</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/tovary-dla-detej?segment=available">Товары для детей</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/tovary-dla-mam?segment=available">Товары для мам</a>                                </li>
+                                                    </ul>

@@ -1,0 +1,38 @@
+<ul class="subcategories">
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/bytovaa-himia?segment=available">Бытовая химия</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/gigiena-2?segment=available">Гигиена</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/dezodoranty?segment=available">Дезодоранты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/dermokosmetika?segment=available">Дермокосметика</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/dlya-vanny-i-dusha?segment=available">Для ванны и душа</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/zhenskaya-gigiyena?segment=available">Женская гигиена</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/zagar-i-zashchita-ot-solntsa?segment=available">Загар и защита от солнца</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/zasita-ot-nasekomyh?segment=available">Защита от насекомых</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/muzhskaya-liniya?segment=available">Мужская линия</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/optika?segment=available">Оптика</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/podarocnye-nabory?segment=available">Подарочные наборы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/uhod-za-volosami?segment=available">Уход за волосами</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/uhod-za-licom?segment=available">Уход за лицом</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/uhod-za-nogami?segment=available">Уход за ногами</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/uhod-za-polostu-rta?segment=available">Уход за полостью рта</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/uhod-za-rukami?segment=available">Уход за руками</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/uhod-za-telom?segment=available">Уход за телом</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/efirnyye-i-kosmeticheskiye-masla?segment=available">Эфирные и косметические масла</a>                                </li>
+                                                    </ul>

@@ -419,7 +419,7 @@ session_start();
                                 <!-- <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
                                     <i class="si si-drop"></i>
                                 </button> -->
-                                <a class="h5 text-white" href="index.html">
+                                <a class="h5 text-white" href="index.php">
                                 <img width="150" height="40" src="assets/img/avatars/1.png" alt="">
                                 <br>
                             </a>
@@ -839,10 +839,10 @@ session_start();
             <!-- Footer -->
             <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
                 <div class="pull-right">
-                    Crafted with <i class="fa fa-heart text-city"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+                    <a class="font-w600" href="#" target="_blank">Aika_pharma.kz</a>
                 </div>
                 <div class="pull-left">
-                    <a class="font-w600" href="http://goo.gl/6LF10W" target="_blank">OneUI 3.4</a> &copy; <span class="js-year-copy">2015</span>
+                    <a class="font-w600" href="#" target="_blank">OneUI</a> &copy; <span class="js-year-copy">2021</span>
                 </div>
             </footer>
             <!-- END Footer -->
@@ -890,7 +890,12 @@ session_start();
             </div>
         </div>
         <!-- END Apps Modal -->
-
+        <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b16524416/crm/site_button/loader_2_7ej8il.js');
+        </script>
         <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
         <script src="assets/js/core/jquery.min.js"></script>
         <script src="assets/js/core/bootstrap.min.js"></script>

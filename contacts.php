@@ -414,7 +414,7 @@
                                 <!-- <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
                                     <i class="si si-drop"></i>
                                 </button> -->
-                                <a class="h5 text-white" href="index.html">
+                                <a class="h5 text-white" href="index.php">
                                 <img width="150" height="40" src="assets/img/avatars/1.png" alt="">
                                 <br>
                             </a>
@@ -772,7 +772,7 @@
 
             <!-- Main Container -->
             <main id="main-container">
-                <div class="block">
+                    <div class="block">
                         <div class="block-header bg-gray-lighter">
                             <h3 class="block-title">Контакты</h3>
                         </div>
@@ -792,6 +792,13 @@
                                                 <i class="fa fa-phone"></i> +7 (700) 557-0057<br>
                                                 <i class="fa fa-envelope-o"></i> <a href="javascript:void(0)">aika_pharma.kz@mail.ru</a>
                                             </address>
+                                            <h3 class="block-title">Social</h3>
+                                            <div class="btn-group">
+                                                
+                                                <a class="btn btn-default" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Facebook page"><i class="fa fa-fw fa-facebook"></i></a>
+                                                <a class="btn btn-default" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Instagram page"><i class="fa fa-fw fa-instagram"></i></a>
+                                                <a class="btn btn-default" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Whatsapp page"><i class="fa fa-fw fa-whatsapp"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- END Billing Address -->
@@ -800,6 +807,12 @@
                                     <!-- END Shipping Address -->
                                 </div>
                             </div>
+                            <script data-b24-form="inline/2/rrgfki" data-skip-moving="true">
+                                    (function(w,d,u){
+                                            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                                            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                                    })(window,document,'https://cdn-ru.bitrix24.ru/b16524416/crm/form/loader_2.js');
+                            </script>
                         </div>
                         
                     </div>
@@ -812,10 +825,10 @@
             <!-- Footer -->
             <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
                 <div class="pull-right">
-                    Crafted with <i class="fa fa-heart text-city"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+                    <a class="font-w600" href="#" target="_blank">Aika_pharma.kz</a>
                 </div>
                 <div class="pull-left">
-                    <a class="font-w600" href="http://goo.gl/6LF10W" target="_blank">OneUI 3.4</a> &copy; <span class="js-year-copy">2015</span>
+                    <a class="font-w600" href="#" target="_blank">OneUI</a> &copy; <span class="js-year-copy">2021</span>
                 </div>
             </footer>
             <!-- END Footer -->

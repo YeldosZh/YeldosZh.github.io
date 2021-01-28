@@ -1,0 +1,82 @@
+<ul class="subcategories">
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/analgetiki?segment=available">Анальгетики</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/antibiotiki?segment=available">Антибиотики</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/antiseptiki?segment=available">Антисептики</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/ginekologiceskie-preparaty?segment=available">Гинекологические препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/gormonalnye-preparaty?segment=available">Гормональные препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/dla-povysenia-immuniteta?segment=available">Для повышения иммунитета</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/zharoponizhayushchiye?segment=available">Жаропонижающие</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/zenskie-preparaty?segment=available">Женские препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/inekcionnye-rastvory?segment=available">Инъекционные растворы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/koznye-zabolevania?segment=available">Кожные заболевания</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-alkogolizma-narkomanii-tabakokurenia?segment=available">Лечение алкоголизма, наркомании, табакокурения</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-arterialnogo-davlenia?segment=available">Лечение артериального давления</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-gemorroa?segment=available">Лечение геморроя</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-glaz?segment=available">Лечение глаз</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-golovnogo-krovoobrosenia?segment=available">Лечение головного кровооброщения</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-desen?segment=available">Лечение десен</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-zkt?segment=available">Лечение жкт</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-zabolevanij-mocepolovoj-sistemy?segment=available">Лечение заболеваний мочеполовой системы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-zabolevanij-oporno-dvigatelnogo-apparata?segment=available">Лечение заболеваний опорно-двигательного аппарата</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecheniye-lor-zabolevaniy?segment=available">Лечение лор заболеваний</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-nevrologiceskih-narusenij?segment=available">Лечение неврологических нарушений</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-peceni?segment=available">Лечение печени</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-pocek?segment=available">Лечение почек</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-ran-i-ozogov?segment=available">Лечение ран и ожогов</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-saharnogo-diabeta?segment=available">Лечение сахарного диабета</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/lecenie-serdecno-sosudistyh-zabolevanij?segment=available">Лечение сердечно-сосудистых заболеваний</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/muzskie-preparaty?segment=available">Мужские препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/onkologicheskiye-preparaty?segment=available">Онкологические препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/ot-parazitov?segment=available">От паразитов</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/preparaty-urologii-i-ginekologii?segment=available">Препараты урологии и гинекологии</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/probiotiki-i-prebiotiki?segment=available">Пробиотики и пребиотики</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/protivoastmaticeskie-preparaty?segment=available">Противоастматические препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/protivovirusnyye-preparaty?segment=available">Противовирусные препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/protivovospalitelnye-sredstva?segment=available">Противовоспалительные средства</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/protivogribkovyye-sredstva?segment=available">Противогрибковые средства</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/protivokashlevyye-preparaty?segment=available">Противокашлевые препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/recepturnye-preparaty?segment=available">Рецептурные препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/slabitelnye-preparaty?segment=available">Слабительные препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/spazmoliticeskie-preparaty?segment=available">Спазмолитические препараты</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/sredstva-ot-allergii?segment=available">Средства от аллергии</a>                                </li>
+                                                    </ul>

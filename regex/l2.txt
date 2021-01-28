@@ -1,0 +1,10 @@
+<ul class="subcategories">
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/bady?segment=available">БАДы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/vitaminy-i-mineraly?segment=available">Витамины и минералы</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/sport-i-fitnes?segment=available">Спорт и фитнес</a>                                </li>
+                                                            <li class="subcategories__item">
+                                    <a class="subcategories__link" href="/catalog/travy-i-fitocai?segment=available">Травы и фиточаи</a>                                </li>
+                                                    </ul>
