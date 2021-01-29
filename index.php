@@ -1,6 +1,7 @@
 <?php
 session_start();
 // var_dump($_GET);
+    // $active = "active";
 ?>
 
 <!DOCTYPE html>
@@ -441,11 +442,11 @@ session_start();
                                     <a href="#"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
-                                <li>
+                                <li class="<?php if (isset($_GET['queue_1'])) {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Лекарства</span></a>
                                     <ul>       
                                         <li>
-                                            <a href="index.php?queue=Аналгетики">Анальгетики</a>
+                                            <a class="<?php if ($_GET['queue_1'] == 'Аналгетики') {echo "active";} ?>" href="index.php?queue_1=Аналгетики">Аналгетики</a>
                                         </li>
                                         <li>
                                             <a href="index.php?queue=Антибиотики">Антибиотики</a>
