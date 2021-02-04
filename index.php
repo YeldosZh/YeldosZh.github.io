@@ -41,6 +41,8 @@ session_start();
         <!-- END Icons -->
 
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+
         <!-- Web fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
 
@@ -441,7 +443,7 @@ session_start();
                                     <a href="map.php"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Аптеки</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
+                                    <a href="contacts.php"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
                                 <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '1') {echo "open";} ?>">
@@ -609,138 +611,176 @@ session_start();
                                         </li> 
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '2462') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Витамины и БАДы</span></a>
                                     <ul>       
                                         <li>
-                                            <a href="index.php?queue=БАДы">БАДы</a>
+                                            <!-- <a href="index.php?queue=БАДы">БАДы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'БАДы') {echo "active";} ?>" href="index.php?queue=БАДы&tree_id=2462">БАДы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Витамины и минералы">Витамины и минералы</a>
+                        
+                                            <a class="<?php if ($_GET['queue'] == 'Витамины и минералы') {echo "active";} ?>" href="index.php?queue=Витамины и минералы&tree_id=2462">Витамины и минералы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Спорт и фитнес">Спорт и фитнес</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Спорт и фитнес') {echo "active";} ?>" href="index.php?queue=Спорт и фитнес&tree_id=2462">Спорт и фитнес</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=АнтисепТравы и фиточаитики">Травы и фиточаи</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Травы и фиточаи') {echo "active";} ?>" href="index.php?queue=Травы и фиточаи&tree_id=2462">Травы и фиточаи</a>
                                         </li> 
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '3218') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Изделия мед. назначения</span></a>
                                     <ul>       
                                         <li>
-                                            <a href="index.php?queue=Медицинские расходные материалы">Медицинские расходные материалы</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские расходные материалы') {echo "active";} ?>" href="index.php?queue=Медицинские расходные материалы&tree_id=3218">Медицинские расходные материалы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Диагностические тесты">Диагностические тесты</a>
+                                            <!-- <a href="index.php?queue=Диагностические тесты">Диагностические тесты</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Диагностические тесты') {echo "active";} ?>" href="index.php?queue=Диагностические тесты&tree_id=3218">Диагностические тесты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Лечебный трикотаж">Лечебный трикотаж</a>
+                                            <!-- <a href="index.php?queue=Лечебный трикотаж">Лечебный трикотаж</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Лечебный трикотаж') {echo "active";} ?>" href="index.php?queue=Лечебный трикотаж&tree_id=3218">Лечебный трикотаж</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Медицинские изделия">Медицинские изделия</a>
+                                            <!-- <a href="index.php?queue=Медицинские изделия">Медицинские изделия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские изделия') {echo "active";} ?>" href="index.php?queue=Медицинские изделия&tree_id=3218">Медицинские изделия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Медицинские инструменты">Медицинские инструменты</a>
+                                            <!-- <a href="index.php?queue=Медицинские инструменты">Медицинские инструменты</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские инструменты') {echo "active";} ?>" href="index.php?queue=Медицинские инструменты&tree_id=3218">Медицинские инструменты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Медицинские приборы">Медицинские приборы</a>
+                                            <!-- <a href="index.php?queue=Медицинские приборы">Медицинские приборы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские приборы') {echo "active";} ?>" href="index.php?queue=Медицинские приборы&tree_id=3218">Медицинские приборы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Ортопедические изделия">Ортопедические изделия</a>
+                                            <!-- <a href="index.php?queue=Ортопедические изделия">Ортопедические изделия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Ортопедические изделия') {echo "active";} ?>" href="index.php?queue=Ортопедические изделия&tree_id=3218">Ортопедические изделия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Перевязочные материалы">Перевязочные материалы</a>
+                                            <!-- <a href="index.php?queue=Перевязочные материалы">Перевязочные материалы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Перевязочные материалы') {echo "active";} ?>" href="index.php?queue=Перевязочные материалы&tree_id=3218">Перевязочные материалы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Средства ухода за больными">Средства ухода за больными</a>
+                                            <!-- <a href="index.php?queue=Средства ухода за больными">Средства ухода за больными</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Средства ухода за больными') {echo "active";} ?>" href="index.php?queue=Средства ухода за больными&tree_id=3218">Средства ухода за больными</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Технические средства реабилитации">Технические средства реабилитации</a>
+                                            <!-- <a href="index.php?queue=Технические средства реабилитации">Технические средства реабилитации</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Технические средства реабилитации') {echo "active";} ?>" href="index.php?queue=Технические средства реабилитации&tree_id=3218">Технические средства реабилитации</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '3794') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Мать и дитя</span></a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?queue=Детская мебель">Детская мебель</a>
+                                            <!-- <a href="index.php?queue=Детская мебель">Детская мебель</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Детская мебель') {echo "active";} ?>" href="index.php?queue=Детская мебель&tree_id=3794">Детская мебель</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Детское питание и кормление">Детское питание и кормление</a>
+                                            <!-- <a href="index.php?queue=Детское питание и кормление">Детское питание и кормление</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Детское питание и кормление') {echo "active";} ?>" href="index.php?queue=Детское питание и кормление&tree_id=3794">Детское питание и кормление</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Одежда">Одежда</a>
+                                            <!-- <a href="index.php?queue=Одежда">Одежда</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Одежда') {echo "active";} ?>" href="index.php?queue=Одежда&tree_id=3794">Одежда</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Питание">Питание</a>
+                                            <!-- <a href="index.php?queue=Питание">Питание</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Питание') {echo "active";} ?>" href="index.php?queue=Питание&tree_id=3794">Питание</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Товары для детей">Товары для детей</a>
+                                            <!-- <a href="index.php?queue=Товары для детей">Товары для детей</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Товары для детей') {echo "active";} ?>" href="index.php?queue=Товары для детей&tree_id=3794">Товары для детей</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Товары для мам">Товары для мам</a>
+                                            <!-- <a href="index.php?queue=Товары для мам">Товары для мам</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Товары для мам') {echo "active";} ?>" href="index.php?queue=Товары для мам&tree_id=3794">Товары для мам</a>
                                         </li>
                                     </ul>
                                     
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '4759') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Красота и гигиена</span></a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?queue=Бытовая химия">Бытовая химия</a>
+                                            <!-- <a href="index.php?queue=Бытовая химия">Бытовая химия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Бытовая химия') {echo "active";} ?>" href="index.php?queue=Бытовая химия&tree_id=4759">Бытовая химия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Гигиена">Гигиена</a>
+                                            <!-- <a href="index.php?queue=Гигиена">Гигиена</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Гигиена') {echo "active";} ?>" href="index.php?queue=Гигиена&tree_id=4759">Гигиена</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Дезодоранты">Дезодоранты</a>
+                                            <!-- <a href="index.php?queue=Дезодоранты">Дезодоранты</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Дезодоранты') {echo "active";} ?>" href="index.php?queue=Дезодоранты&tree_id=4759">Дезодоранты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Дермокосметика">Дермокосметика</a>
+                                            <!-- <a href="index.php?queue=Дермокосметика">Дермокосметика</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Дермокосметика') {echo "active";} ?>" href="index.php?queue=Дермокосметика&tree_id=4759">Дермокосметика</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Для ванны и душа">Для ванны и душа</a>
+                                            <!-- <a href="index.php?queue=Для ванны и душа">Для ванны и душа</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Для ванны и душа') {echo "active";} ?>" href="index.php?queue=Для ванны и душа&tree_id=4759">Для ванны и душа</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Женская гигиена">Женская гигиена</a>
+                                            <!-- <a href="index.php?queue=Женская гигиена">Женская гигиена</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Женская гигиена') {echo "active";} ?>" href="index.php?queue=Женская гигиена&tree_id=4759">Женская гигиена</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Загар и защита от солнца">Загар и защита от солнца</a>
+                                            <!-- <a href="index.php?queue=Загар и защита от солнца">Загар и защита от солнца</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Загар и защита от солнца') {echo "active";} ?>" href="index.php?queue=Загар и защита от солнца&tree_id=4759">Загар и защита от солнца</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Защита от насекомых">Защита от насекомых</a>
+                                            <!-- <a href="index.php?queue=Защита от насекомых">Защита от насекомых</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Защита от насекомых') {echo "active";} ?>" href="index.php?queue=Защита от насекомых&tree_id=4759">Защита от насекомых</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Мужская линия">Мужская линия</a>
+                                            <!-- <a href="index.php?queue=Мужская линия">Мужская линия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Мужская линия') {echo "active";} ?>" href="index.php?queue=Мужская линия&tree_id=4759">Мужская линия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Оптика">Оптика</a>
+                                            <!-- <a href="index.php?queue=Оптика">Оптика</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Оптика') {echo "active";} ?>" href="index.php?queue=Оптика&tree_id=4759">Оптика</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Подарочные наборы">Подарочные наборы</a>
+                                            <!-- <a href="index.php?queue=Подарочные наборы">Подарочные наборы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Подарочные наборы') {echo "active";} ?>" href="index.php?queue=Подарочные наборы&tree_id=4759">Подарочные наборы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за волосами">Уход за волосами</a>
+                                            <!-- <a href="index.php?queue=Уход за волосами">Уход за волосами</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за волосами') {echo "active";} ?>" href="index.php?queue=Уход за волосами&tree_id=4759">Уход за волосами</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за лицом">Уход за лицом</a>
+                                            <!-- <a href="index.php?queue=Уход за лицом">Уход за лицом</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за лицом') {echo "active";} ?>" href="index.php?queue=Уход за лицом&tree_id=4759">Уход за лицом</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за ногами">Уход за ногами</a>
+                                            <!-- <a href="index.php?queue=Уход за ногами">Уход за ногами</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за ногами') {echo "active";} ?>" href="index.php?queue=Уход за ногами&tree_id=4759">Уход за ногами</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за полостью рта">Уход за полостью рта</a>
+                                            <!-- <a href="index.php?queue=Уход за полостью рта">Уход за полостью рта</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за полостью рта') {echo "active";} ?>" href="index.php?queue=Уход за полостью рта&tree_id=4759">Уход за полостью рта</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за руками">Уход за руками</a>
+                                            <!-- <a href="index.php?queue=Уход за руками">Уход за руками</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за руками') {echo "active";} ?>" href="index.php?queue=Уход за руками&tree_id=4759">Уход за руками</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за телом">Уход за телом</a>
+                                            <!-- <a href="index.php?queue=Уход за телом">Уход за телом</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за телом') {echo "active";} ?>" href="index.php?queue=Уход за телом&tree_id=4759">Уход за телом</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Эфирные и косметические масла">Эфирные и косметические масла</a>
+                                            <!-- <a href="index.php?queue=Эфирные и косметические масла">Эфирные и косметические масла</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Эфирные и косметические масла') {echo "active";} ?>" href="index.php?queue=Эфирные и косметические масла&tree_id=4759">Эфирные и косметические масла</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -773,7 +813,7 @@ session_start();
                         <big> | </big>
                         
                             <a class="text-gray-darker" href="javascript:void(0)">
-                                <i class="fa fa-2x fa-fw fa-shopping-cart"></i> Корзина
+                                <i class="fa fa-2x fa-fw fa-shopping-cart"></i> 
                             </a>
                         
                         
@@ -819,26 +859,44 @@ session_start();
             <main id="main-container">
                
                     <?php
-                    /*
-                    //print_r($_GET);
-                    if (isset($_GET['queue'])) {
-                        $tree_id = (int) $_GET['tree_id'];
-                        $cats = getProducts($tree_id);
-                        foreach ($cats as $cat) {
-                            $search = $_GET['queue'];
-                            if ($search == $cat['name']) {
-                                $id = $cat['id'];
-                                break;
+                    
+                        print_r($_GET);
+                        /*
+                        if (isset($_GET['queue'])) {
+                            $tree_id = (int) $_GET['tree_id'];
+                            $cats = getProducts($tree_id);
+                            foreach ($cats as $cat) {
+                                $search = $_GET['queue'];
+                                if ($search == $cat['name']) {
+                                    $id = $cat['id'];
+                                    break;
+                                }
                             }
+                            if ($id) {
+                                $product = getProducts($id);
+                                //print_r($product);
+                            }
+                        } elseif (isset($_GET['search-text'])) {
+                            $string = $_GET['search-text']; 
+                            // $result = searchProduct();
+                            echo 'helloworld';
                         }
-                        if ($id) {
-                            $product = getProducts($id);
-                            //print_r($product);
-                        }
-                    }
-                    //print_r(getProducts(2));
-                    */
+                        */
+                        //print_r(getProducts(2));
+                    
                     ?>
+                
+                <div class="bg-image" style="background-image: url('assets/img/photos/photo28@2x.jpg');">
+                    <div class="content content-full bg-primary-op">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h1 class="page-heading text-white">
+                                    <?php echo $_GET['queue'] ?> <small class="hidden-xs"><span class="text-white-op"></span></small>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 
                 <section class="content content-boxed">
@@ -855,21 +913,22 @@ session_start();
                                 <div class="block">
                                         <div class="block-content">
                                             <div class="row items-push">
-                                                <div class="col-md-4">
-                                                    <a href="#">
+                                                <div class="col-md-4 item-avatar">
+                                                    
                                                         <img class="img" src="<?php echo $value['link'] ?>" alt="">
-                                                    </a>
+                                                    
                                                 </div>
                                                 <div class="col-md-8">
+                                                    <h4 class="text-uppercase push-10"><a class="text-primary-dark" href="base_pages_blog_story.html"><?php echo $value['name'] ?></a></h4>
+                                                    
                                                     <div class="font-s12 push-10">
                                                         <em class="pull-right"><?php echo $value['price'] ?></em>
-                                                        <a href="base_pages_profile.html">Производитель:</a> <?php echo $value['brand'] ?>
+                                                        Производитель: <a ><?php echo $value['brand'] ?></a> 
                                                     </div>
-                                                    <h4 class="text-uppercase push-10"><a class="text-primary-dark" href="base_pages_blog_story.html"><?php echo $value['name'] ?></a></h4>
-                                                    <p class="push-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh..</p>
+                                                    <p class="push-20">Lo</p>
                                                     <div class="btn-group btn-group-sm">
-                                                        <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-share-alt push-5-r"></i> Share</a>
-                                                        <a class="btn btn-default" href="base_pages_blog_story.html">Continue Reading..</a>
+                                                        <a class="btn btn-default" href="#"><i class="fa fa-file-text"></i> Оставить заявку</a>
+                                                        <a class="btn btn-default" href="https://aikapharma.bitrix24.kz/online/aikapharama">Онлайн консультация..</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -882,9 +941,8 @@ session_start();
                         }
                     ?>
                      </div>
-                            
-                        
                 </section>
+                                    
             </main>
             <!-- END Main Container -->
 

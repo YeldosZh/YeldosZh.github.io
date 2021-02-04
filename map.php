@@ -728,7 +728,7 @@
                         <big> | </big>
                         
                             <a class="text-gray-darker" href="javascript:void(0)">
-                                <i class="fa fa-2x fa-fw fa-shopping-cart"></i> Корзина
+                                <i class="fa fa-2x fa-fw fa-shopping-cart"></i> 
                             </a>
                         
                         
@@ -870,24 +870,17 @@
         <script src="assets/js/core/js.cookie.min.js"></script>
         <script src="assets/js/app.js"></script>
 
-        <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
-        <script src="assets/js/core/jquery.min.js"></script>
-        <script src="assets/js/core/bootstrap.min.js"></script>
-        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
-        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
-        <script src="assets/js/core/jquery.appear.min.js"></script>
-        <script src="assets/js/core/jquery.countTo.min.js"></script>
-        <script src="assets/js/core/jquery.placeholder.min.js"></script>
-        <script src="assets/js/core/js.cookie.min.js"></script>
-        <script src="assets/js/app.js"></script>
-
-        <!-- Page JS Plugins -->
-        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
-        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
-        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-        <script src="assets/js/plugins/gmapsjs/gmaps.min.js"></script>
+        <!-- Page Plugins -->
+        <script src="assets/js/plugins/slick/slick.min.js"></script>
+        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
 
         <!-- Page JS Code -->
-        <script src="assets/js/pages/base_comp_maps_full.js"></script>
+        <script src="assets/js/pages/base_pages_dashboard.js"></script>
+        <script>
+            jQuery(function () {
+                // Init page helpers (Slick Slider plugin)
+                App.initHelpers('slick');
+            });
+        </script>
     </body>
 </html>

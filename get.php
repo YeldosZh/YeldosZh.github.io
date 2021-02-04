@@ -25,3 +25,17 @@ function getProducts(int $parent_id = null)
 
     return $array;
 }
+
+function searchProduct(string $string)
+{
+     global $pdo;
+
+    $array = [];
+    if ($string != '') {
+        $sth = $pdo->prepare("SELECT * FROM `products` WHERE `parent_id` = :string");
+        $sth->execute(array('string' => $string));
+    }
+    $array = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+    return $array;
+}

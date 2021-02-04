@@ -728,7 +728,7 @@
                         <big> | </big>
                         
                             <a class="text-gray-darker" href="javascript:void(0)">
-                                <i class="fa fa-2x fa-fw fa-shopping-cart"></i> Корзина
+                                <i class="fa fa-2x fa-fw fa-shopping-cart"></i> 
                             </a>
                         
                         
