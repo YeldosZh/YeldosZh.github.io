@@ -39,11 +39,16 @@ if (!isset($products) || !sizeof($products)) {
     ");
 
     #Этап#3. Выполнение.
-    foreach ($products as $product) {
+    foreach ($products as $value) {
         $stmt->execute([
-            ':id'   => $product['id'],
-            ':name' => $product['name'],
-            ':parent_id'   => ($rest['id_parent'] == $rest['id']) ? null : getParentId($rest['id_parent'])
+            ':id'        => $value['id'],
+            ':name' => $value['name'],
+            ':brand'   => $value['brand'],
+            ':price'   => $value['price'],
+            ':link'   => $value['link'],
+            ':parent_id'   => $value['parent_id']
         ]);
     }
 }
+
+
