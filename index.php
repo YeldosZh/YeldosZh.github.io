@@ -11,7 +11,7 @@ session_start();
         <meta charset="utf-8">
 
         <title>Интернет-аптека &amp; Купить лекарства </title>
-
+        
         <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
         <meta name="robots" content="noindex, nofollow">
