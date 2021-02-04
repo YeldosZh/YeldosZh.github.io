@@ -6,51 +6,49 @@
  * and open the template in the editor.
  */
 
-include 'function.php';
+include 'index.php';
 include 'db.php';
 
 
-$rests = getTnvedFromPage();
-if ($rests == false) {
+if (!isset($products) || !sizeof($products)) {
     var_dump(1);
 } else {
     // print_r($rests);
-    $smtp = $pdo->prepare("TRUNCATE TABLE `tnved`"); //Очистить таблицу (TRUNCATE)
+    $smtp = $pdo->prepare("TRUNCATE TABLE `products`"); //Очистить таблицу (TRUNCATE)
     $smtp->execute();
 
     #"Этап# 2. Подгатовка.
 
     $stmt = $pdo->prepare("
      INSERT INTO
-        `tnved` (
-         `code`,
-         `description`,
+        `products` (
+         `id`,
+         `name`,
+         `brand`,
+         `price`,
+         `link`,
          `parent_id`
         ) VALUES (
-             :code,
-             :description,
+             :id,
+             :name,
+             :brand,
+             :price,
+             :link,
              :parent_id
         )
     ");
 
     #Этап#3. Выполнение.
-    foreach ($rests as $rest) {
+    foreach ($products as $value) {
         $stmt->execute([
-            ':code'        => $rest['id'],
-            ':description' => str_replace("'", "", str_replace("\'", "", $rest['name'])),
-            ':parent_id'   => ($rest['id_parent'] == $rest['id']) ? null : getParentId($rest['id_parent'])
+            ':id'        => $value['id'],
+            ':name' => $value['name'],
+            ':brand'   => $value['brand'],
+            ':price'   => $value['price'],
+            ':link'   => $value['link'],
+            ':parent_id'   => $value['parent_id']
         ]);
     }
 }
 
-function getParentId($code)
-{
-    global $pdo;
 
-    $sth = $pdo->prepare("SELECT * FROM `tnved` WHERE `code` = :code");
-    $sth->execute(array('code' => $code));
-    $array = $sth->fetch(PDO::FETCH_ASSOC);
-    $tnved_id = $array['tnved_id'];
-
-    return $tnved_id;
-}

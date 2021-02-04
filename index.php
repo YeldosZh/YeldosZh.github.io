@@ -1,7 +1,9 @@
 <?php
+include 'get.php';
 session_start();
 // var_dump($_GET);
     // $active = "active";
+    
 ?>
 
 <!DOCTYPE html>
@@ -442,131 +444,169 @@ session_start();
                                     <a href="#"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
-                                <li class="<?php if (isset($_GET['queue_1'])) {echo "open";} ?>">
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '1') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Лекарства</span></a>
                                     <ul>       
                                         <li>
-                                            <a class="<?php if ($_GET['queue_1'] == 'Аналгетики') {echo "active";} ?>" href="index.php?queue_1=Аналгетики">Аналгетики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Аналгетики') {echo "active";} ?>" href="index.php?queue=Анальгетики&tree_id=1">Анальгетики</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Антибиотики">Антибиотики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антибиотики') {echo "active";} ?>" href="index.php?queue=Антибиотики&tree_id=1">Антибиотики</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Антисептики">Антисептики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li>
                                         <li>
                                             <a href="index.php?queue=Гинекологические препараты">Гинекологические препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li>
                                         <li>
                                             <a href="index.php?queue=Гормональные препараты">Гормональные препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li>   
                                         <li>
                                             <a href="index.php?queue=Для повышения иммунитета">Для повышения иммунитета</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Гормональные препараты">Гормональные препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Жаропонижающие">Жаропонижающие</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Женские препараты">Женские препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Инъекционные растворы">Инъекционные растворы</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Кожные заболевания">Кожные заболевания</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение алкоголизма, наркомании, табакокурения">Лечение алкоголизма, наркомании, табакокурения</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение артериального давления">Лечение артериального давления</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение геморроя">Лечение геморроя</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение глаз">Лечение глаз</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение головного кровооброщения">Лечение головного кровооброщения</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение десен">Лечение десен</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение жкт">Лечение жкт</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение заболеваний мочеполовой системы">Лечение заболеваний мочеполовой системы</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение заболеваний опорно-двигательного аппарата">Лечение заболеваний опорно-двигательного аппарата</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение лор заболеваний">Лечение лор заболеваний</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение неврологических нарушений">Лечение неврологических нарушений</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение печени">Лечение печени</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение почек">Лечение почек</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение ран и ожогов">Лечение ран и ожогов</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение сахарного диабета">Лечение сахарного диабета</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Лечение сердечно-сосудистых заболеваний">Лечение сердечно-сосудистых заболеваний</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Мужские препараты">Мужские препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Онкологические препараты">Онкологические препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=От паразитов">От паразитов</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Препараты урологии и гинекологии">Препараты урологии и гинекологии</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Пробиотики и пребиотики">Пробиотики и пребиотики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Противоастматические препараты">Противоастматические препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Противовирусные препараты">Противовирусные препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Противовоспалительные средства">Противовоспалительные средства</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Противогрибковые средства">Противогрибковые средства</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Противокашлевые препараты">Противокашлевые препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Рецептурные препараты">Рецептурные препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Слабительные препараты">Слабительные препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li> 
                                         <li>
                                             <a href="index.php?queue=Спазмолитические препараты">Спазмолитические препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Спазмолитические препараты') {echo "active";} ?>" href="index.php?queue=Спазмолитические препараты&tree_id=1">Спазмолитические препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Средства от аллергии">Средства от аллергии</a>
+                                    
+                                            <a class="<?php if ($_GET['queue'] == 'Средства от аллергии') {echo "active";} ?>" href="index.php?queue=Средства от аллергии&tree_id=1">Средства от аллергии</a>
                                         </li> 
                                     </ul>
                                 </li>
@@ -778,60 +818,70 @@ session_start();
 
             <!-- Main Container -->
             <main id="main-container">
-                <?php
-                var_dump($_GET);
-                ?>
+               
+                    <?php
+                    //print_r($_GET);
+                    if (isset($_GET['queue'])) {
+                        $tree_id = (int) $_GET['tree_id'];
+                        $cats = getProducts($tree_id);
+                        foreach ($cats as $cat) {
+                            $search = $_GET['queue'];
+                            if ($search == $cat['name']) {
+                                $id = $cat['id'];
+                                break;
+                            }
+                        }
+                        if ($id) {
+                            $product = getProducts($id);
+                            //print_r($product);
+                        }
+                    }
+                    //print_r(getProducts(2));
+                    ?>
+                
+                
                 <section class="content content-boxed">
                     <!-- Section Content -->
+                    
                     <div class="push-50-t push-50">
-                        <div class="row">
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
+                    <div class="col-lg-12">
+                    <?php 
+                        $i = 0;
+                        foreach ($product as $value) {
+                            ?> 
+                               
+                                <!-- Story -->
+                                <div class="block">
+                                        <div class="block-content">
+                                            <div class="row items-push">
+                                                <div class="col-md-4">
+                                                    <a href="#">
+                                                        <img class="img" src="<?php echo $value['link'] ?>" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="font-s12 push-10">
+                                                        <em class="pull-right"><?php echo $value['price'] ?></em>
+                                                        <a href="base_pages_profile.html">Производитель:</a> <?php echo $value['brand'] ?>
+                                                    </div>
+                                                    <h4 class="text-uppercase push-10"><a class="text-primary-dark" href="base_pages_blog_story.html"><?php echo $value['name'] ?></a></h4>
+                                                    <p class="push-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh..</p>
+                                                    <div class="btn-group btn-group-sm">
+                                                        <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-share-alt push-5-r"></i> Share</a>
+                                                        <a class="btn btn-default" href="base_pages_blog_story.html">Continue Reading..</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
                                     </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                            <!-- Story -->
-                            <div class="col-sm-4 animated fadeIn" data-toggle="appear" data-offset="30" data-class="animated fadeIn">
-                                <a class="block block-link-hover2" href="#">
-                                    <img src="https://st.europharma.kz/cache/product/180/160x160_5f4f3e2635c00.png" alt="">
-                                    <div class="block-content">
-                                        <div class="font-s12 push">
-                                            <em class="pull-right">2 240 ₸</em>
-                                            <span class="text-primary">Производитель:</span> Сандоз Фармасьютикалс
-                                        </div>
-                                        <h6 class="push-10">Кетонал форте 100 мг № 20 табл</h6>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Story -->
-                           
-                        </div>
+                                    <!-- END Story -->
+
+                               
+                            <?php
+                        }
+                    ?>
+                     </div>
+                            
                         
                 </section>
             </main>
