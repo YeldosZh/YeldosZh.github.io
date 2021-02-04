@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Document</title>
-    <style>
-            #map 
-            {
-                width: 100%;
-                height: 400px;
-            }
-        </style>
+    <title>Быстрый старт. Размещение интерактивной карты на странице</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=41a86c62-b8b7-46fa-b6e6-1b91655a606f&lang=ru_RU" type="text/javascript">
+    </script>
+        <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                    center: [43.25654, 76.92848],
+                    zoom: 15
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+
+                myGeoObject = new ymaps.GeoObject(),
+                myPieChart = new ymaps.Placemark();
+
+                myMap.geoObjects
+                .add(myGeoObject)
+                .add(myPieChart)
+                .add(new ymaps.Placemark([43.2557,76.9280], {
+                    iconCaption: 'Аптека, Казыбек би 117/1'
+                }, {
+                    preset: 'islands#greenDotIconWithCaption'
+                }));
+        }
+    </script>
 </head>
+
 <body>
-        <div id="map"></div>
-        <script>
-                function initMap()
-                {
-                    var element = document.getElementById('map');
-                    var options = {
-                        zoom: 5,
-                        center: {lat:43.25654, lng: 76.92848}
-                    };
-    
-                    var myMap = new google.maps.Map(element, options);
-                    
-                    var marker = new google.maps.Marker({
-                        position: {lat:43.25654, lng: 76.92848},
-                        map: myMap
-                    });
-    
-                    var InfoWindow = new google.maps.InfoWindow({
-                        content: '<h1>Hey there</h1>'
-                    })
-    
-                    InfoWindow.open(myMap, marker);
-    
-                    marker.addListener('click', function(){
-                        InfoWindow.open(myMap, marker);
-                    });
-                }
-            </script>
-    
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNvWEv8lcCl4f0rIZvo5bFp9fCk3IEIM0&callback=initMap">
-            </script>
-
-
+    <div id="map" style="width: 600px; height: 400px"></div>
 </body>
+
 </html>
