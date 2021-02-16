@@ -6,9 +6,8 @@
 
         <title>Интернет-аптека &amp; Купить лекарства </title>
 
-        <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="description" content="Аптека, лекарства">
         <meta name="author" content="pixelcave">
-        <meta name="robots" content="noindex, nofollow">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 
         <!-- Icons -->
