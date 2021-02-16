@@ -33,7 +33,9 @@ foreach ($katalog as $val) {
             getData($urls[$k], $str, $parent_id);
             $str++;
         }
+       
     }
+   
 }
 
 /*

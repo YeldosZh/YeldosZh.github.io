@@ -430,272 +430,347 @@
                                     <a href="onas.php"><i class="si si-badge"></i><span class="sidebar-mini-hide">О нас</span></a>
                                 </li>
                                 <li>
-                                    <a class="active" href="map.php"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Аптеки</span></a>
+                                    <a href="map.php"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Аптеки</span></a>
                                 </li>
                                 <li>
                                     <a href="contacts.php"><i class="glyphicon glyphicon-user"></i><span class="sidebar-mini-hide">Контакты</span></a>
                                 </li>
-                                <li class="nav-main-heading"><span style="color: rgb(32, 228, 163);" class="sidebar-mini-hide">Коталог товаров</span></li>
-                                <li>
+                                <li class="nav-main-heading"><span style="color: #18BCAC;" class="sidebar-mini-hide">Каталог товаров</span></li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '1') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Лекарства</span></a>
                                     <ul>       
                                         <li>
-                                            <a href="index.php?queue=Аналгетики">Анальгетики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Аналгетики') {echo "active";} ?>" href="index.php?queue=Анальгетики&tree_id=1">Анальгетики</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Антибиотики">Антибиотики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антибиотики') {echo "active";} ?>" href="index.php?queue=Антибиотики&tree_id=1">Антибиотики</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Антисептики">Антисептики</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Антисептики') {echo "active";} ?>" href="index.php?queue=Антисептики&tree_id=1">Антисептики</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Гинекологические препараты">Гинекологические препараты</a>
+                                            <a class="<?php if ($_GET['queue'] == 'Гинекологические препараты') {echo "active";} ?>" href="index.php?queue=Гинекологические препараты&tree_id=1">Гинекологические препараты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Гормональные препараты">Гормональные препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Гормональные препараты') {echo "active";} ?>" href="index.php?queue=Гормональные препараты&tree_id=1">Гормональные препараты</a>
                                         </li>   
                                         <li>
-                                            <a href="index.php?queue=Для повышения иммунитета">Для повышения иммунитета</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Для повышения иммунитета') {echo "active";} ?>" href="index.php?queue=Для повышения иммунитета&tree_id=1">Для повышения иммунитета</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Гормональные препараты">Гормональные препараты</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Гормональные препараты') {echo "active";} ?>" href="index.php?queue=Гормональные препараты&tree_id=1">Гормональные препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Жаропонижающие">Жаропонижающие</a>
+                                          
+                                            <a class="<?php if ($_GET['queue'] == 'Жаропонижающие') {echo "active";} ?>" href="index.php?queue=Жаропонижающие&tree_id=1">Жаропонижающие</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Женские препараты">Женские препараты</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Женские препараты') {echo "active";} ?>" href="index.php?queue=Женские препараты&tree_id=1">Женские препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Инъекционные растворы">Инъекционные растворы</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Инъекционные растворы') {echo "active";} ?>" href="index.php?queue=Инъекционные растворы&tree_id=1">Инъекционные растворы</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Кожные заболевания">Кожные заболевания</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Кожные заболевания') {echo "active";} ?>" href="index.php?queue=Кожные заболевания&tree_id=1">Кожные заболевания</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение алкоголизма, наркомании, табакокурения">Лечение алкоголизма, наркомании, табакокурения</a>
+                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение алкоголизма, наркомании, табакокурения') {echo "active";} ?>" href="index.php?queue=Лечение алкоголизма, наркомании, табакокурения&tree_id=1">Лечение алкоголизма, наркомании, табакокурения</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение артериального давления">Лечение артериального давления</a>
+                                 
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение артериального давления') {echo "active";} ?>" href="index.php?queue=Лечение артериального давления&tree_id=1">Лечение артериального давления</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение геморроя">Лечение геморроя</a>
+                                
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение геморроя') {echo "active";} ?>" href="index.php?queue=Лечение геморроя&tree_id=1">Лечение геморроя</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение глаз">Лечение глаз</a>
+                    
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение глаз') {echo "active";} ?>" href="index.php?queue=Лечение глаз&tree_id=1">Лечение глаз</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение головного кровооброщения">Лечение головного кровооброщения</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение головного кровооброщения') {echo "active";} ?>" href="index.php?queue=Лечение головного кровооброщения&tree_id=1">Лечение головного кровооброщения</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение десен">Лечение десен</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение десен') {echo "active";} ?>" href="index.php?queue=Лечение десен&tree_id=1">Лечение десен</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение жкт">Лечение жкт</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение жкт') {echo "active";} ?>" href="index.php?queue=Лечение жкт&tree_id=1">Лечение жкт</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение заболеваний мочеполовой системы">Лечение заболеваний мочеполовой системы</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение заболеваний мочеполовой системы') {echo "active";} ?>" href="index.php?queue=Лечение заболеваний мочеполовой системы&tree_id=1">Лечение заболеваний мочеполовой системы</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение заболеваний опорно-двигательного аппарата">Лечение заболеваний опорно-двигательного аппарата</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение заболеваний опорно-двигательного аппарата') {echo "active";} ?>" href="index.php?queue=Лечение заболеваний опорно-двигательного аппарата&tree_id=1">Лечение заболеваний опорно-двигательного аппарата</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение лор заболеваний">Лечение лор заболеваний</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение лор заболеваний') {echo "active";} ?>" href="index.php?queue=Лечение лор заболеваний&tree_id=1">Лечение лор заболеваний</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение неврологических нарушений">Лечение неврологических нарушений</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение неврологических нарушений') {echo "active";} ?>" href="index.php?queue=Лечение неврологических нарушений&tree_id=1">Лечение неврологических нарушений</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение печени">Лечение печени</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение печени') {echo "active";} ?>" href="index.php?queue=Лечение печени&tree_id=1">Лечение печени</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение почек">Лечение почек</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение почек') {echo "active";} ?>" href="index.php?queue=Лечение почек&tree_id=1">Лечение почек</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение ран и ожогов">Лечение ран и ожогов</a>
+                                        
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение ран и ожогов') {echo "active";} ?>" href="index.php?queue=Лечение ран и ожогов&tree_id=1">Лечение ран и ожогов</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение сахарного диабета">Лечение сахарного диабета</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение сахарного диабета') {echo "active";} ?>" href="index.php?queue=Лечение сахарного диабета&tree_id=1">Лечение сахарного диабета</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Лечение сердечно-сосудистых заболеваний">Лечение сердечно-сосудистых заболеваний</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Лечение сердечно-сосудистых заболеваний') {echo "active";} ?>" href="index.php?queue=Лечение сердечно-сосудистых заболеваний&tree_id=1">Лечение сердечно-сосудистых заболеваний</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Мужские препараты">Мужские препараты</a>
+                                          
+                                            <a class="<?php if ($_GET['queue'] == 'Мужские препараты') {echo "active";} ?>" href="index.php?queue=Мужские препараты&tree_id=1">Мужские препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Онкологические препараты">Онкологические препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Онкологические препараты') {echo "active";} ?>" href="index.php?queue=Онкологические препараты&tree_id=1">Онкологические препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=От паразитов">От паразитов</a>
+                                        
+                                            <a class="<?php if ($_GET['queue'] == 'От паразитов') {echo "active";} ?>" href="index.php?queue=От паразитов&tree_id=1">От паразитов</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Препараты урологии и гинекологии">Препараты урологии и гинекологии</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Препараты урологии и гинекологии') {echo "active";} ?>" href="index.php?queue=Препараты урологии и гинекологии&tree_id=1">Препараты урологии и гинекологии</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Пробиотики и пребиотики">Пробиотики и пребиотики</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Пробиотики и пребиотики') {echo "active";} ?>" href="index.php?queue=Пробиотики и пребиотики&tree_id=1">Пробиотики и пребиотики</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Противоастматические препараты">Противоастматические препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Противоастматические препараты') {echo "active";} ?>" href="index.php?queue=Противоастматические препараты&tree_id=1">Противоастматические препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Противовирусные препараты">Противовирусные препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Противовирусные препараты') {echo "active";} ?>" href="index.php?queue=Противовирусные препараты&tree_id=1">Противовирусные препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Противовоспалительные средства">Противовоспалительные средства</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Противовоспалительные средства') {echo "active";} ?>" href="index.php?queue=Противовоспалительные средства&tree_id=1">Противовоспалительные средства</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Противогрибковые средства">Противогрибковые средства</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Противогрибковые средства') {echo "active";} ?>" href="index.php?queue=Противогрибковые средства&tree_id=1">Противогрибковые средства</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Противокашлевые препараты">Противокашлевые препараты</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Противокашлевые препараты') {echo "active";} ?>" href="index.php?queue=Противокашлевые препараты&tree_id=1">Противокашлевые препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Рецептурные препараты">Рецептурные препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Рецептурные препараты') {echo "active";} ?>" href="index.php?queue=Рецептурные препараты&tree_id=1">Рецептурные препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Слабительные препараты">Слабительные препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Слабительные препараты') {echo "active";} ?>" href="index.php?queue=Слабительные препараты&tree_id=1">Слабительные препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Спазмолитические препараты">Спазмолитические препараты</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Спазмолитические препараты') {echo "active";} ?>" href="index.php?queue=Спазмолитические препараты&tree_id=1">Спазмолитические препараты</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=Средства от аллергии">Средства от аллергии</a>
+                                    
+                                            <a class="<?php if ($_GET['queue'] == 'Средства от аллергии') {echo "active";} ?>" href="index.php?queue=Средства от аллергии&tree_id=1">Средства от аллергии</a>
                                         </li> 
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '2443') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Витамины и БАДы</span></a>
                                     <ul>       
                                         <li>
-                                            <a href="index.php?queue=БАДы">БАДы</a>
+                                            <!-- <a href="index.php?queue=БАДы">БАДы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'БАДы') {echo "active";} ?>" href="index.php?queue=БАДы&tree_id=2443">БАДы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Витамины и минералы">Витамины и минералы</a>
+                        
+                                            <a class="<?php if ($_GET['queue'] == 'Витамины и минералы') {echo "active";} ?>" href="index.php?queue=Витамины и минералы&tree_id=2443">Витамины и минералы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Спорт и фитнес">Спорт и фитнес</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Спорт и фитнес') {echo "active";} ?>" href="index.php?queue=Спорт и фитнес&tree_id=2443">Спорт и фитнес</a>
                                         </li> 
                                         <li>
-                                            <a href="index.php?queue=АнтисепТравы и фиточаитики">Травы и фиточаи</a>
+                                           
+                                            <a class="<?php if ($_GET['queue'] == 'Травы и фиточаи') {echo "active";} ?>" href="index.php?queue=Травы и фиточаи&tree_id=2443">Травы и фиточаи</a>
                                         </li> 
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '3195') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Изделия мед. назначения</span></a>
                                     <ul>       
                                         <li>
-                                            <a href="index.php?queue=Медицинские расходные материалы">Медицинские расходные материалы</a>
+                                            
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские расходные материалы') {echo "active";} ?>" href="index.php?queue=Медицинские расходные материалы&tree_id=3195">Медицинские расходные материалы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Диагностические тесты">Диагностические тесты</a>
+                                            <!-- <a href="index.php?queue=Диагностические тесты">Диагностические тесты</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Диагностические тесты') {echo "active";} ?>" href="index.php?queue=Диагностические тесты&tree_id=3195">Диагностические тесты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Лечебный трикотаж">Лечебный трикотаж</a>
+                                            <!-- <a href="index.php?queue=Лечебный трикотаж">Лечебный трикотаж</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Лечебный трикотаж') {echo "active";} ?>" href="index.php?queue=Лечебный трикотаж&tree_id=3195">Лечебный трикотаж</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Медицинские изделия">Медицинские изделия</a>
+                                            <!-- <a href="index.php?queue=Медицинские изделия">Медицинские изделия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские изделия') {echo "active";} ?>" href="index.php?queue=Медицинские изделия&tree_id=3195">Медицинские изделия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Медицинские инструменты">Медицинские инструменты</a>
+                                            <!-- <a href="index.php?queue=Медицинские инструменты">Медицинские инструменты</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские инструменты') {echo "active";} ?>" href="index.php?queue=Медицинские инструменты&tree_id=3195">Медицинские инструменты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Медицинские приборы">Медицинские приборы</a>
+                                            <!-- <a href="index.php?queue=Медицинские приборы">Медицинские приборы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Медицинские приборы') {echo "active";} ?>" href="index.php?queue=Медицинские приборы&tree_id=3195">Медицинские приборы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Ортопедические изделия">Ортопедические изделия</a>
+                                            <!-- <a href="index.php?queue=Ортопедические изделия">Ортопедические изделия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Ортопедические изделия') {echo "active";} ?>" href="index.php?queue=Ортопедические изделия&tree_id=3195">Ортопедические изделия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Перевязочные материалы">Перевязочные материалы</a>
+                                            <!-- <a href="index.php?queue=Перевязочные материалы">Перевязочные материалы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Перевязочные материалы') {echo "active";} ?>" href="index.php?queue=Перевязочные материалы&tree_id=3195">Перевязочные материалы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Средства ухода за больными">Средства ухода за больными</a>
+                                            <!-- <a href="index.php?queue=Средства ухода за больными">Средства ухода за больными</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Средства ухода за больными') {echo "active";} ?>" href="index.php?queue=Средства ухода за больными&tree_id=3195">Средства ухода за больными</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Технические средства реабилитации">Технические средства реабилитации</a>
+                                            <!-- <a href="index.php?queue=Технические средства реабилитации">Технические средства реабилитации</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Технические средства реабилитации') {echo "active";} ?>" href="index.php?queue=Технические средства реабилитации&tree_id=3195">Технические средства реабилитации</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '3742') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Мать и дитя</span></a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?queue=Детская мебель">Детская мебель</a>
+                                            <!-- <a href="index.php?queue=Детская мебель">Детская мебель</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Детская мебель') {echo "active";} ?>" href="index.php?queue=Детская мебель&tree_id=3742">Детская мебель</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Детское питание и кормление">Детское питание и кормление</a>
+                                            <!-- <a href="index.php?queue=Детское питание и кормление">Детское питание и кормление</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Детское питание и кормление') {echo "active";} ?>" href="index.php?queue=Детское питание и кормление&tree_id=3742">Детское питание и кормление</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Одежда">Одежда</a>
+                                            <!-- <a href="index.php?queue=Одежда">Одежда</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Одежда') {echo "active";} ?>" href="index.php?queue=Одежда&tree_id=3742">Одежда</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Питание">Питание</a>
+                                            <!-- <a href="index.php?queue=Питание">Питание</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Питание') {echo "active";} ?>" href="index.php?queue=Питание&tree_id=3742">Питание</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Товары для детей">Товары для детей</a>
+                                            <!-- <a href="index.php?queue=Товары для детей">Товары для детей</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Товары для детей') {echo "active";} ?>" href="index.php?queue=Товары для детей&tree_id=3742">Товары для детей</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Товары для мам">Товары для мам</a>
+                                            <!-- <a href="index.php?queue=Товары для мам">Товары для мам</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Товары для мам') {echo "active";} ?>" href="index.php?queue=Товары для мам&tree_id=3742">Товары для мам</a>
                                         </li>
                                     </ul>
                                     
                                 </li>
-                                <li>
+                                <li class="<?php if (isset($_GET['tree_id']) && $_GET['tree_id'] == '4698') {echo "open";} ?>">
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-medkit"></i><span class="sidebar-mini-hide">Красота и гигиена</span></a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?queue=Бытовая химия">Бытовая химия</a>
+                                            <!-- <a href="index.php?queue=Бытовая химия">Бытовая химия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Бытовая химия') {echo "active";} ?>" href="index.php?queue=Бытовая химия&tree_id=4698">Бытовая химия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Гигиена">Гигиена</a>
+                                            <!-- <a href="index.php?queue=Гигиена">Гигиена</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Гигиена') {echo "active";} ?>" href="index.php?queue=Гигиена&tree_id=4698">Гигиена</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Дезодоранты">Дезодоранты</a>
+                                            <!-- <a href="index.php?queue=Дезодоранты">Дезодоранты</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Дезодоранты') {echo "active";} ?>" href="index.php?queue=Дезодоранты&tree_id=4698">Дезодоранты</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Дермокосметика">Дермокосметика</a>
+                                            <!-- <a href="index.php?queue=Дермокосметика">Дермокосметика</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Дермокосметика') {echo "active";} ?>" href="index.php?queue=Дермокосметика&tree_id=4698">Дермокосметика</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Для ванны и душа">Для ванны и душа</a>
+                                            <!-- <a href="index.php?queue=Для ванны и душа">Для ванны и душа</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Для ванны и душа') {echo "active";} ?>" href="index.php?queue=Для ванны и душа&tree_id=4698">Для ванны и душа</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Женская гигиена">Женская гигиена</a>
+                                            <!-- <a href="index.php?queue=Женская гигиена">Женская гигиена</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Женская гигиена') {echo "active";} ?>" href="index.php?queue=Женская гигиена&tree_id=4698">Женская гигиена</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Загар и защита от солнца">Загар и защита от солнца</a>
+                                            <!-- <a href="index.php?queue=Загар и защита от солнца">Загар и защита от солнца</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Загар и защита от солнца') {echo "active";} ?>" href="index.php?queue=Загар и защита от солнца&tree_id=4698">Загар и защита от солнца</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Защита от насекомых">Защита от насекомых</a>
+                                            <!-- <a href="index.php?queue=Защита от насекомых">Защита от насекомых</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Защита от насекомых') {echo "active";} ?>" href="index.php?queue=Защита от насекомых&tree_id=4698">Защита от насекомых</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Мужская линия">Мужская линия</a>
+                                            <!-- <a href="index.php?queue=Мужская линия">Мужская линия</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Мужская линия') {echo "active";} ?>" href="index.php?queue=Мужская линия&tree_id=4698">Мужская линия</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Оптика">Оптика</a>
+                                            <!-- <a href="index.php?queue=Оптика">Оптика</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Оптика') {echo "active";} ?>" href="index.php?queue=Оптика&tree_id=4698">Оптика</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Подарочные наборы">Подарочные наборы</a>
+                                            <!-- <a href="index.php?queue=Подарочные наборы">Подарочные наборы</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Подарочные наборы') {echo "active";} ?>" href="index.php?queue=Подарочные наборы&tree_id=4698">Подарочные наборы</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за волосами">Уход за волосами</a>
+                                            <!-- <a href="index.php?queue=Уход за волосами">Уход за волосами</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за волосами') {echo "active";} ?>" href="index.php?queue=Уход за волосами&tree_id=4698">Уход за волосами</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за лицом">Уход за лицом</a>
+                                            <!-- <a href="index.php?queue=Уход за лицом">Уход за лицом</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за лицом') {echo "active";} ?>" href="index.php?queue=Уход за лицом&tree_id=4698">Уход за лицом</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за ногами">Уход за ногами</a>
+                                            <!-- <a href="index.php?queue=Уход за ногами">Уход за ногами</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за ногами') {echo "active";} ?>" href="index.php?queue=Уход за ногами&tree_id=4698">Уход за ногами</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за полостью рта">Уход за полостью рта</a>
+                                            <!-- <a href="index.php?queue=Уход за полостью рта">Уход за полостью рта</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за полостью рта') {echo "active";} ?>" href="index.php?queue=Уход за полостью рта&tree_id=4698">Уход за полостью рта</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за руками">Уход за руками</a>
+                                            <!-- <a href="index.php?queue=Уход за руками">Уход за руками</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за руками') {echo "active";} ?>" href="index.php?queue=Уход за руками&tree_id=4698">Уход за руками</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Уход за телом">Уход за телом</a>
+                                            <!-- <a href="index.php?queue=Уход за телом">Уход за телом</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Уход за телом') {echo "active";} ?>" href="index.php?queue=Уход за телом&tree_id=4698">Уход за телом</a>
                                         </li>
                                         <li>
-                                            <a href="index.php?queue=Эфирные и косметические масла">Эфирные и косметические масла</a>
+                                            <!-- <a href="index.php?queue=Эфирные и косметические масла">Эфирные и косметические масла</a> -->
+                                            <a class="<?php if ($_GET['queue'] == 'Эфирные и косметические масла') {echo "active";} ?>" href="index.php?queue=Эфирные и косметические масла&tree_id=4698">Эфирные и косметические масла</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -722,7 +797,7 @@
                             <i class="fa fa-2x fa-fw fa-facebook-square"></i>
                         </a>
                         
-                        <a class="text-primary" href="javascript:void(0)">
+                        <a class="text-primary" href="https://instagram.com/aika_pharma.kz">
                             <i class="fa fa-2x fa-fw fa-instagram"></i>
                         </a>
                         <big> | </big>
@@ -761,7 +836,9 @@
                         <form class="form-horizontal" action="index.php" method="GET">
                             <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b">
                                 <input class="form-control" type="text" id="base-material-text" name="search-text" placeholder="Введите название лекарства">
-                                <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </div>
                             </div>
                         </form>
                     </li>
@@ -809,9 +886,9 @@
                 <div class="pull-right">
                     <a class="font-w600" href="#" target="_blank">Aika_pharma.kz</a>
                 </div>
-                <div class="pull-left">
+<!--                <div class="pull-left">
                     <a class="font-w600" href="#" target="_blank">OneUI</a> &copy; <span class="js-year-copy">2021</span>
-                </div>
+                </div>-->
             </footer>
             <!-- END Footer -->
         </div>

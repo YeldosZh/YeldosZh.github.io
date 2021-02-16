@@ -8,8 +8,8 @@
 
 $host = '127.0.0.1';
 $db   = 'aikapharma';
-$user = 'adlet';
-$pass = '!q2w3e4r5t';
+$user = 'root';
+$pass = 'admin';
 $charset = 'utf8';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

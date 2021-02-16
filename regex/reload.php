@@ -14,14 +14,14 @@ if (!isset($products) || !sizeof($products)) {
     var_dump(1);
 } else {
     // print_r($rests);
-    $smtp = $pdo->prepare("TRUNCATE TABLE `products`"); //Очистить таблицу (TRUNCATE)
+    $smtp = $pdo->prepare("TRUNCATE TABLE `products3`"); //Очистить таблицу (TRUNCATE)
     $smtp->execute();
 
     #"Этап# 2. Подгатовка.
 
     $stmt = $pdo->prepare("
      INSERT INTO
-        `products` (
+        `products3` (
          `id`,
          `name`,
          `brand`,
