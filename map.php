@@ -788,15 +788,15 @@
                 <!-- Header Navigation Right -->
                 <ul class="nav-header pull-right">
                     <i class="glyphicon glyphicon-earphone"></i><big> +7 (700) 557-0057</big>
-                        <a class="text-success" href="javascript:void(0)">
+                        <a class="text-success" href="https://api.whatsapp.com/send?phone=77005570057" target="_blank">
                              <i class="fa fa-2x fa-fw fa-whatsapp"></i>
                         </a>
                     
-                        <a class="text-primary" href="javascript:void(0)">
+<!--                        <a class="text-primary" href="javascript:void(0)">
                             <i class="fa fa-2x fa-fw fa-facebook-square"></i>
-                        </a>
+                        </a>-->
                         
-                        <a class="text-primary" href="https://instagram.com/aika_pharma.kz">
+                        <a class="text-primary" href="https://instagram.com/aika_pharma.kz" target="_blank">
                             <i class="fa fa-2x fa-fw fa-instagram"></i>
                         </a>
                         <big> | </big>
